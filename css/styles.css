@@ -1,0 +1,345 @@
+
+.page {
+  margin: 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* ~~~~~~~~~~~~~ Colors ~~~~~~~~~~~~~ */
+.color-white {
+  color: rgb(255, 255, 255);
+}
+
+.color-warning {
+  color: rgb(242, 197, 38);
+}
+
+.color-primary {
+  color: rgb(67, 89, 238);
+}
+
+.color-success {
+  color: rgb(77, 217, 49);
+}
+
+/* ~~~~~~~~~~~~~ background Colors ~~~~~~~~~~~~~ */
+.bg-black {
+  background-color: rgb(0, 0, 0);
+}
+
+.bg-dark-secondary {
+  background-color: rgb(41, 46, 40);
+}
+
+.bg-dark-success {
+  background-color: rgb(13, 129, 24);
+}
+
+.bg-light {
+  background-color: rgb(231, 231, 231);
+}
+
+/* ~~~~~~~~~~~~~ Icon Colors ~~~~~~~~~~~~~ */
+.fa-twitter-square {
+  color: #17A3F2;
+}
+
+.fa-facebook-square {
+  color: #1173E7;
+}
+
+.fa-instagram {
+  color: #fff;
+  background-color: #000;
+  padding: 0;
+}
+
+/* ~~~~~~~~~~~~~ Images ~~~~~~~~~~~~~ */
+/* Section 1: Main */
+.main-background-image {
+  background-image: url('https://raw.githubusercontent.com/erickkg/SiteImages/master/Udacity-LandingPage/mainImage.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Section 2: Product */
+.product-picture {
+  background-image: url('https://raw.githubusercontent.com/erickkg/SiteImages/master/Udacity-LandingPage/productImage.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  min-height: 60vh;
+}
+
+/* ~~~~~~~~~~~~~ Navigation ~~~~~~~~~~~~~ */
+.nav-container {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: rgba(38, 38, 38, 0.7);
+  margin: 0 0 -55px;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 15px 0;
+  font-size: 1.2rem;
+  border-left: 1px solid rgba(90, 92, 116, 0.6);
+  width: 100vw;
+}
+
+.nav-item:hover {
+  background-color: rgb(107, 217, 85);
+}
+
+.active {
+  background-color: rgb(77, 217, 49);
+  color: rgb(0, 0, 0);
+}
+
+.nav-icon {
+  display: none;
+}
+
+/* ~~~~~~~~~~~~~ Main Background Image ~~~~~~~~~~~~~ */
+.main-card-info {
+  padding-top: 70vh;
+  font-size: 1.1rem;
+}
+
+.title-text {
+  margin: 10px 0 30px;
+  font-size: 4rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* ~~~~~~~~~~~~~ Welcome Row ~~~~~~~~~~~~~ */
+.welcome {
+  text-align: center;
+  padding: 50px 0 10px;
+}
+
+.welcome-row {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  height: 130px;
+}
+
+.welcome-title {
+  padding: 10px 20px;
+}
+
+.welcome-text {
+  border-left: 1px solid rgb(77, 217, 49);
+  height: 120px;
+  padding: 0 15px 0;
+}
+
+/* ~~~~~~~~~~~~~ Sections ~~~~~~~~~~~~~ */
+.card {
+  padding: 130px 0 150px;
+  display: flex;
+  min-height: 450px;
+  text-align: center;
+}
+
+.card-text {
+  margin: 0;
+  padding: 50px 25px;
+}
+
+.section-2,
+.card-text {
+  padding-right: 30px;
+}
+
+/* ~~~~~~~~~~~~~ Contact Section ~~~~~~~~~~~~~ */
+.contact-info {
+  margin: 20px 0 100px;
+}
+
+.social-icon-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+/* ~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~ */
+.footer {
+  padding: 20px 0 10px;
+  text-align: center;
+}
+
+.developer {
+  padding-top: 30px;
+}
+
+/* ########## Universal, can be used anywhere ########## */
+.link {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.half {
+  width: 50%;
+}
+
+.font-large {
+  font-size: 2rem;
+}
+
+.p-2 {
+  padding: 20px;
+}
+
+.p-3 {
+  padding: 30px;
+}
+
+.pr-3 {
+  padding-right: 30px;
+}
+
+.pl-3 {
+  padding-left: 30px;
+}
+
+.horizontal-line {
+  border-top: 1px solid rgb(77, 217, 49);
+  margin: 0;
+}
+
+.group-data-container {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.data-container {
+  margin: 40px 10px 30px;
+}
+
+.data-container .font-large {
+  display: block;
+}
+
+/* ################# Mobile ################### */
+@media only screen and (max-width: 600px) {
+  .mobile-nav {
+    visibility: visible;
+    justify-content: flex-end;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    justify-content: flex-end;
+    position: fixed;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .invisible {
+    display: none;
+  }
+
+  .icon-container {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav-icon {
+    display: block;
+    padding: 5px 30px;
+  }
+
+  .nav-icon:hover {
+    background-color: rgb(77, 217, 49);
+    color: #fff;
+  }
+
+  /* -------------- Main Background Image --------------- */
+  .title-text {
+    font-size: 3.5rem;
+  }
+
+  .half {
+    width: auto;
+  }
+
+  .welcome-row {
+    display: block;
+    padding: 10px 20px 50px;
+  }
+
+  /* -------------- Welcome Area --------------- */
+  .welcome-title {
+    border-right: none;
+  }
+
+  .welcome-text {
+    border-left: 1px solid rgb(0, 0, 0);
+  }
+
+  /* -------------- Section Image --------------- */
+  .product-picture {
+    min-height: 40vh;
+  }
+
+  .card {
+    display: block;
+  }
+
+  .pr-3,
+  .pl-3 {
+    padding: 0;
+  }
+
+  .section-contact {
+    display: grid;
+    padding: 0;
+  }
+
+  .section-product {
+    display: block;
+  }
+
+  .group-data-container {
+    margin-top: 10px;
+  }
+
+  .footer {
+    display: block;
+  }
+}
